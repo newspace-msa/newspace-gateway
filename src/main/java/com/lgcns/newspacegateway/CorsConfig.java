@@ -58,7 +58,10 @@ public class CorsConfig {
         config.setAllowedOrigins(List.of(
                 "http://d1wvssrshiud2m.cloudfront.net",
                 "http://172.18.0.2:8080",
-                "http://3.82.228.233:8072"
+                "http://3.82.228.233:8072",
+                "lb://newspace-user-service",
+                "lb://newspace-notice-service",
+                "lb://newspace-news-service"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.addAllowedHeader("*");
