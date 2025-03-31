@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: newspace-gateway
+  config:
+    import: optional:configserver:${SPRING_CONFIG_IMPORT:http://localhost:8888}

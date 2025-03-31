@@ -34,7 +34,7 @@ dependencies {
     // Eureka Client (서비스 디스커버리)
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
-//    // Actuator (모니터링)
+    // Actuator (모니터링)
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
     // Lombok
@@ -47,6 +47,12 @@ dependencies {
     // boot, junit
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // config-service
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    implementation "org.springframework.cloud:spring-cloud-starter-bootstrap"
 }
 
 dependencyManagement {
