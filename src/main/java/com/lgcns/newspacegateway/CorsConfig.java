@@ -57,7 +57,8 @@ public class CorsConfig {
         config.setAllowCredentials(true);
         config.setAllowedOrigins(List.of(
                 "http://d1wvssrshiud2m.cloudfront.net",
-                "http://172.18.0.2:8080"
+                "http://172.18.0.2:8080",
+                "http://3.82.228.233:8072"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.addAllowedHeader("*");
